@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
+import Header from './common/header/Header'
 import Footer from './common/footer/Footer';
 import './App.less';
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <Router>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/marketplace" element={<Marketplace />} />
