@@ -1,0 +1,3 @@
+.fill-svg svg {
+    @apply fill-neutral-300 hover:fill-primary-600 focus:fill-primary-600 transition-all text-lg
+}
