@@ -23,7 +23,6 @@ export default function SearchBar() {
 
     return (
         <Search 
-            className="w-[375px] group" 
             placeholder="Search" 
             allowClear
             size="large"
