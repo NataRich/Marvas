@@ -1,7 +1,7 @@
 
 import { useNavigate } from 'react-router-dom'
 
-import { Breadcrumb, Divider } from 'antd';
+import { Breadcrumb, Divider,Carousel } from 'antd';
 import Product_Placeholder from '../asset/img/dummy/product.jpeg';
 
 const Product = () =>{
@@ -29,8 +29,8 @@ return (
                 <div className='w-[314px] h-[370px] object-cover items-center -mb-[40px]'> 
                 <img src={Product_Placeholder} alt="" />
                 </div>
-
                 <div className='w-full h-fit flex space-x-4'>
+                
                 <div className='w-[60px] h-[60px] object-cover items-center'>
                 <img src={Product_Placeholder} alt="" />
                 </div>
@@ -42,9 +42,9 @@ return (
                 </div>
                 <div className='w-[60px] h-[60px] object-cover items-center'>
                 <img src={Product_Placeholder} alt="" />
-                </div>
                 </div>
                 
+                </div>
             </div>
             
 

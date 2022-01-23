@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
+import Signin from './pages/signin/Signin';
+import Signup from './pages/signup/Signup';
 import Header from './common/header/Header'
 import Footer from './common/footer/Footer';
 import Product from './common/product/Product';
@@ -13,11 +15,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/marketplace" element={<Marketplace />} /> */}
           <Route path="/product/:id" element={<Product />} />
-          {/* <Route path="/list" element={<ListPage />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/signin" element={<Signin />} /> */}
+          <Route path="/signin" element={<Signin />} /> 
+          <Route path="/signup" element={<Signup />} /> 
+          {/* <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/item/:id" element={<ProductPage />} />
+          <Route path="/list" element={<ListPage />}
+          <Route path="/profile" element={<Profile />} /> */}
         </Routes>
         <Footer />
       </Router>
