@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Header from './common/header/Header'
 import Footer from './common/footer/Footer';
+import Product from './common/product/Product';
 import './App.less';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/signin" element={<Signin />} /> */}
         </Routes>
+        <Product />
         <Footer />
       </Router>
     </div>
