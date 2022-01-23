@@ -2,7 +2,7 @@ import { Carousel, Pagination } from "antd";
 import { useEffect, useState } from "react";
 
 import { ProductCard } from "../../common/product/cards";
-import { products_ov, subdivisions } from "../../common/dummy/dummy";
+import { products_iphone_ov, products_ov, subdivisions } from "../../common/dummy/dummy";
 import Random1 from "../../common/asset/img/dummy/random1.jpg";
 import Random2 from "../../common/asset/img/dummy/random2.jpg";
 
@@ -20,6 +20,13 @@ export default function Home() {
         setSelectedSub(subdivisions[0]);
         setProducts(products_ov);
     }, [])
+
+    useEffect(() => {
+        if (selectedSub !== subdivisions[0])
+            setProducts(products_iphone_ov);
+        else
+            setProducts(products_ov);
+    }, [selectedSub])
 
     return (
         <div className="flex flex-col justify-center items-center font-sans">
