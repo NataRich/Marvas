@@ -52,7 +52,7 @@ return (
                 
             <div className='flex-wrap w-[516px]'>
                 <p className='text-3xl font-bold'>Pure Enrichment® MistAire™ Ultrasonic Cool Mist Humidifier</p>
-                <p className='text-3xl font-bold -mt-[20px]'>$39.99</p>
+                <p className='text-3xl font-bold -mt-[20px]'>$389.99</p>
                 <p className=''><Divider /></p>
                 <div className='w-[363px]'>
                 <p>Premium Unit Lasts Up to 25 Hours with Whisper-Quiet Operation, Automatic Shut-Off, Night Light Function, and BPA-Free.</p>
