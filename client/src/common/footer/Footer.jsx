@@ -78,7 +78,7 @@ const Footer = () => {
                                     <p 
                                         className="text-lg text-neutral-600 mb-[20px] cursor-pointer hover:underline" 
                                         key={key}
-                                        onClick={() => {navigate(`/marketplace?cats=${cat}`)}}
+                                        onClick={() => {navigate(`/marketplace?cats=${cat.toLowerCase()}`)}}
                                     >
                                         {cat}
                                     </p>
