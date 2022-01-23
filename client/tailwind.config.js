@@ -6,12 +6,16 @@ module.exports = {
     extend: {},
     colors: {
       primary: colors.teal,
+      sky: colors.sky,
       neutral: colors.neutral,
       white: "#FFFFFF"
     },
     fontFamily: {
-      sans: ['Roboto']
+      sans: ['Roboto', 'Open Sans'],
+      handwritten: ['Permanent Marker']
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
