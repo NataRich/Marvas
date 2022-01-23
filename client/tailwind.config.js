@@ -8,6 +8,7 @@ module.exports = {
       primary: colors.teal,
       sky: colors.sky,
       neutral: colors.neutral,
+      red: colors.red,
       white: "#FFFFFF"
     },
     fontFamily: {
