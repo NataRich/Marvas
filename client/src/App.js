@@ -15,16 +15,14 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
           <Route path="/signin" element={<Signin />} /> 
           <Route path="/signup" element={<Signup />} /> 
           {/* <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/item/:id" element={<ProductPage />} />
           <Route path="/list" element={<ListPage />}
-          <Route path="/profile" element={<Profile />} />
-          */}
+          <Route path="/profile" element={<Profile />} /> */}
         </Routes>
-        
         <Footer />
       </Router>
     </div>
