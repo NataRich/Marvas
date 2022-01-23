@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Button } from "antd";
 
 export function ProductCard(props) {
     return (
@@ -17,9 +18,44 @@ export function ProductCard(props) {
     )
 }
 
+export function OrderItemCard(props) {
+    return (
+        <div className="w-[900px] h-[200px] flex font-sans mb-[30px]">
+            <Link className="mr-[30px]" to={`/product/${props.id}`} target="_blank" rel="noreferrer">
+                <div className="w-[200px] h-full rounded-[2px] flex justify-center items-center hover:bg-neutral-100">
+                    <img className="w-[150px] h-[150px] rounded-[2px] object-cover" src={props.img} alt="" />
+                </div>
+            </Link>
+            <div className="w-[470px] h-full flex flex-col justify-between">
+                <Link className="mr-[30px]" to={`/product/${props.id}`} target="_blank" rel="noreferrer">
+                    <div className="flex">
+                        <p className="text-2xl text-neutral-900 mr-[20px]">${props.price}</p>
+                    </div>
+                </Link>
+                <Button 
+                    className="w-[150px]" 
+                    size="large"
+                    type="default" 
+                    danger
+                    onClick={props.onRemove}
+                >
+                    Remove
+                </Button>
+            </div>
+        </div>
+    )
+}
+
 ProductCard.protoTypes = {
     id: PropTypes.number,
     img: PropTypes.string,
     desc: PropTypes.string,
     price: PropTypes.number
+}
+
+OrderItemCard.protoTypes = {
+    id: PropTypes.number,
+    img: PropTypes.string,
+    price: PropTypes.number,
+    onRemove: () => {}
 }
